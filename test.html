@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.24.1.css">
+<body>
+
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="https://code.jquery.com/qunit/qunit-2.24.1.js"></script>
+<script src="index.js"></script>
+<script>
+
+    QUnit.module('page', () => {
+
+        QUnit.test('detect word case 2', assert => {
+            //GIVEN
+            let result_1 = []
+
+
+            //WHEN
+            let result_2 = result_1
+
+            //THEN
+            assert.deepEqual([], result_2);
+        });
+
+    });
+
+</script>
+</body>
