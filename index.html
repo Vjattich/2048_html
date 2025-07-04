@@ -25,7 +25,6 @@
             margin: 150px auto 0 auto;
             border-radius: 10px;
             overflow: hidden;
-            aspect-ratio: 1 / 1;
         }
 
         .center-table td, .center-table th {
@@ -65,7 +64,7 @@
             z-index: 10;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 468px) {
 
             html {
                 font-size: 14px;
@@ -78,13 +77,13 @@
 
             .center-table {
                 font-size: 1em;
-                margin: 2em auto 0 auto;
-                aspect-ratio: 1 / 1;
+                margin: 20em auto 0 auto;
+                border-spacing: 3px;
             }
 
             .center-table td, .center-table th {
-                aspect-ratio: 1 / 1;
-                font-size: 1em;
+                width: 3em;
+                height: 3em;
             }
 
             .qr {
@@ -93,7 +92,7 @@
             }
 
             div:has(br) {
-                height: 0.5em; /* Smaller space on mobile */
+                height: 0.5em;
             }
 
             div:has(br):nth-child(2), #main > div:has(br):nth-child(3) {
